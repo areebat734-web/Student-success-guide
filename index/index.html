@@ -183,11 +183,11 @@
     <div class="appbar-inner">
       <div class="brand" aria-label="Site brand">
         <div class="logo" aria-hidden="true"></div>
-        <div>Student Success Guide</div>
+        <div>Success Guide</div>
       </div>
       <div class="actions">
         <button class="btn" id="toggle-dark" aria-pressed="false" aria-label="Toggle dark mode">🌙 Dark</button>
-        <a class="btn" href="#top" id="jump-top">⬆️ Top</a>
+        <a class="btn" href="#top" id="jump-top">⬆ Top</a>
       </div>
     </div>
   </header>
@@ -519,10 +519,10 @@
   </main>
 
   <!-- Back to top floating button -->
-  <div class="to-top" id="to-top" aria-hidden="true"><button title="Back to top" aria-label="Back to top">⬆️</button></div>
+  <div class="to-top" id="to-top" aria-hidden="true"><button title="Back to top" aria-label="Back to top">⬆</button></div>
 
   <div class="to-top" id="to-top" aria-hidden="true">
-    <button aria-label="Back to top">⬆️</button>
+    <button aria-label="Back to top">⬆</button>
   </div>
 
   <!-- Scripts -->
@@ -533,14 +533,14 @@
     if(localStorage.getItem("dark") === "true"){
       body.classList.add("dark");
       darkBtn.setAttribute("aria-pressed","true");
-      darkBtn.textContent="☀️ Light";
+      darkBtn.textContent="☀ Light";
     }
     darkBtn.addEventListener("click",()=>{
       body.classList.toggle("dark");
       const dark=body.classList.contains("dark");
       localStorage.setItem("dark",dark);
       darkBtn.setAttribute("aria-pressed",dark);
-      darkBtn.textContent=dark?"☀️ Light":"🌙 Dark";
+      darkBtn.textContent=dark?"☀ Light":"🌙 Dark";
     });
 
     // Progress bar
@@ -598,4 +598,4 @@
 </html>
 
 </body>
-</html> 
+</html>
